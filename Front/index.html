@@ -1,18 +1,13 @@
 <html>
     <head>
-        <title>Pokemon API</title>
+        <title>Zelda API</title>
         <meta charset="UTF-8">
         <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
         <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="styles.css">
-        <script src="pokemonTypesColors.js"></script>
-        <script src="searchPkmn.js"></script>
-        <script src="formPkmn.js"></script>
-        <script src="deletePkmn.js"></script>
-        <script src="savePkmn.js"></script>
-        <script src="changePkmn.js"></script>
+        <script src="searchGame.js"></script>
         <script src="main.js"></script>
     </head>
     <body>
@@ -22,30 +17,20 @@
                 <tbody>
                     <tr>
                         <td class="tdPanel"><input type="Text" id="txtBuscar"/></td>
-                        <td class="tdPanel"><button class="bigButton" id="btnBuscar">&#128269; Buscar</button></td>
-                        <td class="tdPanel tdTitle"><label class="labelTitle">Pokedex API v1.0 -DVJC</label></td>
-                        <td class="tdPanel tdCheckbox">
-                            <input type="checkbox" id="chkApi" name="chkApi" value="useCustomApi">
-                            <label for="chkApi" class="labelCheckbox"> Custom API</label>
+                        <td class="tdPanel">
+                            <button class="bigButton" id="btnBuscar">&#128269; Buscar</button>
+                            (Ej. Ocarina)
                         </td>
-                    </tr>
-                </tbody>
-                <tbody>
-                    <tr>
-                        
-                        <td class="tdPanel" id="crud">
-                            <button id="btnAlta">Alta &#10133;</button>
-                            <button id="btnCambio">Cambio &#8618;</button>
-                            <button id="btnBaja">Baja &#10134;</button>
-                        </td>
+                        <td class="tdPanel tdTitle"><label class="labelTitle">Zelda API v1.0 -DVJC</label></td>
+                        <td class="tdPanel"><image src="./Assets/logo.png" class="tdLogo"></image></td>
                     </tr>
                 </tbody>
             </table>
         </div>
         <div id = "wrapper" class="wrapper">
-        <table class="tablePkmn">
+        <table class="tableGame">
             <thead></thead>
-            <tbody id="pkmn"></tbody>
+            <tbody id="game"></tbody>
         </table>
     </body>
 </html>
